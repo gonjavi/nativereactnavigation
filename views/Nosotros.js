@@ -12,7 +12,7 @@ const Nosotros = ({ navigation, route }) => {
 
   return (
     <View style={styles.contenedor}>
-      <Text>{clienteId}</Text>
+      <Text> ID:  {clienteId}</Text>
       <Button 
         title="Volver"
         onPress={() => volver()}

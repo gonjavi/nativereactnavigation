@@ -24,10 +24,24 @@ const App = () => {
         <Stack.Screen
           name='Inicio'
           component={Inicio}
+          options={{
+            title: "Home",
+            headerTitleAlign: 'center',
+            headerStyle: {
+              backgroundColor: '#F4511E'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold'
+            }
+          }}
         />
         <Stack.Screen
           name='Nosotros'
           component={Nosotros}
+          options={({route}) => ({
+            title: route.params.nombre
+          })}
         />
 
       </Stack.Navigator>

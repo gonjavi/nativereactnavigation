@@ -4,6 +4,7 @@ import { Text, StyleSheet, View, Button } from 'react-native';
 const Inicio = ({ navigation }) => {
   const information = {
     clienteId: 20,
+    nombre: 'Andres',
     totalpagar: 500,
   }
   const visitarNosotros = () => {
