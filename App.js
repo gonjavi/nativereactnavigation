@@ -20,21 +20,33 @@ const App = () => {
      <NavigationContainer>
       <Stack.Navigator
         initialRouteName="Inicio"
+        // para dara estilo a la navegacion de todas las pantallas
+        screenOptions={{
+          headerTitleAlign: 'center',
+          headerStyle: {
+            backgroundColor: '#F4511E'
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold'
+          }
+        }}
       >
         <Stack.Screen
           name='Inicio'
           component={Inicio}
-          options={{
-            title: "Home",
-            headerTitleAlign: 'center',
-            headerStyle: {
-              backgroundColor: '#F4511E'
-            },
-            headerTintColor: '#fff',
-            headerTitleStyle: {
-              fontWeight: 'bold'
-            }
-          }}
+           // para dara estilo a la navegacion a este componente
+          // options={{
+          //   title: "Home",
+          //   headerTitleAlign: 'center',
+          //   headerStyle: {
+          //     backgroundColor: '#F4511E'
+          //   },
+          //   headerTintColor: '#fff',
+          //   headerTitleStyle: {
+          //     fontWeight: 'bold'
+          //   }
+          // }}
         />
         <Stack.Screen
           name='Nosotros'
